@@ -6,14 +6,14 @@ const dotenv = require('dotenv').config();
 
 const telegramAPI = require('node-telegram-bot-api');
 
-const token = process.env.KEY_BOT;
+const token = '6056939404:AAGYnOfloR_RenEplnoZ1vMn5x8E_cn1Hgc';
 
 const bot = new telegramAPI(token,{polling: true});
 
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: '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',
 });
 
 const openai = new OpenAIApi(configuration);
